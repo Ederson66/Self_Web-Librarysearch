@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Thư viện tìm kiếm</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+<style>
+    img{
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <divc class="title m-2">
+            <h1 style="text-align: center;">THƯ VIỆN TÌM KIẾM</h1>
+        </div>
+        <div class="m-5">
+            <div class="btn-thuvien">
+                <div class="m-2">
+                    <strong>Chọn thư viện:</strong>
+                </div>
+                <div class="m-2">
+                    <button class="btn btn-success" id="bootstrap">Bootstrap</button>
+                </div>
+                <div class="m-2">
+                    <button class="btn btn-success" id="other">Thư viện khác</button>
+                </div>
+                <div class="m-2">
+                    <button class="btn btn-success" id="sql">SQL server</button>
+                </div>
+                <div class="m-2">
+                    <button class="btn btn-success" id="javascript">Javascript</button>
+                </div>
+            </div>
+            <!-- Thư viện bootstrap -->
+            <div id="bootstrap" class="bootstrap d-none">
+                <table class="table text-center table-striped table-hover">
+                    <tr>
+                        <th style="text-align: center;" colspan="7">
+                            <h2>Bootstrap</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Stt</th>
+                        <th scope="col">Key search</th>
+                        <th scope="col">Link</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Ảnh</th>
+                        <th scope="col">Ý nghĩa</th>
+                        <th scope="col">Cách dùng</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>data table bootstrap</td>
+                        <td>
+                            <a href="https://datatables.net/examples/styling/bootstrap4" target="_blank">Xem</a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Data table là một viện thư viết bằng javascript giúp cho việc truy cập dữ liệu trong các bảng HTML.</td>
+                        <td>Sử dụng link CDN hoặc tải về (link ở bên trong thẻ head)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>icon bootstrap</td>
+                        <td>
+                            <a href="https://icons.getbootstrap.com/" target="_blank">Xem</a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Đây là 1 thư viện sử dụng icon của bootstrap</td>
+                        <td>Sử dụng link CDN hoặc tải về (link ở bên trong thẻ head)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>tab table w3schools</td>
+                        <td>
+                            <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_js_tab.asp" target="_blank">Xem</a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <img src="./img/bootstrap/1.PNG" alt="">
+                        </td>
+                        <td>Cấu trúc tab trong table</td>
+                        <td>Xem chi tiết hướng dẫn ở w3schools đã gắn link</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><strong>Ghi chú:</strong> Cách sử dụng bootstrap là: chủ yếu sử dụng class có sẵn của bootstrap</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Các thư viện khác -->
+            <div class="other d-none">
+                <table class="table text-center table-striped table-hover mt-5">
+                    <tr>
+                        <th style="text-align: center;" colspan="7">
+                            <h2>Các thư viện khác</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Stt</th>
+                        <th scope="col">Key search</th>
+                        <th scope="col">Link</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Ảnh</th>
+                        <th scope="col">Ý nghĩa</th>
+                        <th scope="col">Cách dùng</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Select2</td>
+                        <td>
+                            <a href="https://select2.org/" target="_blank">Xem</a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Dùng để làm đẹp cho ô chọn select và có các tùy chỉnh sẵn cho ô select</td>
+                        <td>Sử dụng link CDN hoặc tải về</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>toastr by codeseven</td>
+                        <td>
+                            <a href="https://codeseven.github.io/toastr/" target="_blank">Xem</a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Có đầy đủ các loại thông báo đẹp cho web</td>
+                        <td>Sử dụng link CDN hoặc tải về</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><strong>Ghi chú:</strong> Rất dễ dùng chỉ việc link CDN vào và tìm thêm trên gg là có thể sử dụng được</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- SQL server -->
+            <div class="sql d-none">
+                <table class="table text-center table-striped table-hover mt-5">
+                    <tr>
+                        <th style="text-align: center;" colspan="7">
+                            <h2>SQL server</h2>
+                        </th>
+                    </tr>
+                </table>
+    
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#homesql" role="tab" aria-controls="homesql" aria-selected="true">Home SQL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#caulenh" role="tab" aria-controls="caulenh" aria-selected="false">Câu lệnh</a>
+                    </li>
+                </ul>
+    
+                <div class="tab-content">
+                    <div id="homesql" class="tab-pane active">
+                        <div>
+                            <table class="table text-center table-striped table-hover mt-5">
+                                <tr>
+                                    <th scope="col">Stt</th>
+                                    <th scope="col">Key search</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                    <th scope="col">Cách dùng</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>sql server</td>
+                                    <td>
+                                        <a href="https://www.w3schools.com/sql/" target="_blank">Xem</a>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Thiết kế bảng chứa dữ liệu của web</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"><strong>Ghi chú:</strong> Đây là phần quan trọng của website</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="caulenh" class="tab-pane">
+                        <div>
+                            <table class="table text-center table-striped table-hover" >
+                                <tr>
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Lệnh</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                    <th scope="col">Design Tool</th>
+                                </tr>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>select * from sys.sysservers</td>
+                                    <td>show phần mềm sql đag đc cài đặt trên con server nào</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>select * from sys.databases</td>
+                                    <td>show tất cả các database đag nằm trên server của cta</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>select DB_NAME() AS 'Database Name'</td>
+                                    <td>để xem cta đag nằm trên con database nào</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">4</td>
+                                    <td>Use tên database</td>
+                                    <td>Dùng để sử dụng 1 con database khác</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">5</td>
+                                    <td>select * from sys.database_files</td>
+                                    <td>xem lưu dữ liệu và file log đag được lưu trữ ở đâu</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">6</td>
+                                    <td>select * from sys.tables</td>
+                                    <td>thể hiện tất cả các bảng trong database đó</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">7</td>
+                                    <td>select * from sys.objects where type='PK'</td>
+                                    <td>khóa chính</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">8</td>
+                                    <td>select * from sys.objects where type='f'</td>
+                                    <td>khóa phụ</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">9</td>
+                                    <td>select * from sys.objects where type='p'</td>
+                                    <td>thủ tục lưu trữ dữ liệu</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">10</td>
+                                    <td>create database name(tên mình đặt database) => trong đó có nhiều tham số để set cho nó</td>
+                                    <td>câu lệnh tạo database</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">11</td>
+                                    <td>CREATE DATABASE ten_co_so_du_lieu;</td>
+                                    <td>dùng để tạo database</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">12</td>
+                                    <td>DROP DATABASE ten_co_so_du_lieu;</td>
+                                    <td>để xóa một cơ sở dữ liệu hiện có trong SQL</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">13</td>
+                                    <td>CREATE TABLE Tên_bảng</td>
+                                    <td>dùng để tạo bảng</td>
+                                    <td><img src="./img/13.PNG" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">14</td>
+                                    <td>INSERT INTO SINHVIEN (MASV, TENSV, QUEQUAN)VALUES (1, N’NGUYỄN VĂN A’, 1)</td>
+                                    <td>thêm các bản ghi vào bảng</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">15</td>
+                                    <td>SELECT * FROM table_name;</td>
+                                    <td>sử dụng để chọn dữ liệu từ cơ sở dữ liệu</td>
+                                    <td> Cú pháp truy vấn dữ liệu tổng quát<img src="./img/15.PNG" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">16</td>
+                                    <td>SELECT column_name(s)
+                                        FROM table1
+                                        INNER JOIN table2
+                                        ON table1.column_name = table2.column_name;</td>
+                                    <td>Từ khóa INNER JOIN chọn các bản ghi có giá trị giống nhau trong cả hai bảng.(kết hợp cả 2 bảng vào với nhau)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">17</td>
+                                    <td>ROW_NUMBER() OVER (ORDER BY tên_để_đánh_số )</td>
+                                    <td>hàm dùng để đánh số thứ tự</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Javascipt -->
+            <div class="javascript d-none">
+                <table class="table text-center table-striped table-hover mt-5">
+                    <tr>
+                        <th style="text-align: center;" colspan="7">
+                            <h2>Javascipt</h2>
+                        </th>
+                    </tr>
+                </table>
+    
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#homejs" role="tab" aria-controls="homejs" aria-selected="true">Home javascript</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#caulenhjs" role="tab" aria-controls="caulenhjs" aria-selected="false">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#notejs" role="tab" aria-controls="notejs" aria-selected="false">Note</a>
+                      </li>
+                </ul>
+    
+                <div class="tab-content">
+                    <div id="homesql" class="tab-pane active">
+                        <div>
+                            <table class="table text-center table-striped table-hover mt-5">
+                                <tr>
+                                    <th scope="col">Stt</th>
+                                    <th scope="col">Key search</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                    <th scope="col">Cách dùng</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Javascipt w3schools</td>
+                                    <td>
+                                        <a href="https://www.w3schools.com/js/" target="_blank">Xem</a>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Làm được mọi thứ về website</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"><strong>Ghi chú:</strong> Javascipt có thể làm được mọi thứ cho website của bạn đây là ngôn ngữ rất mạnh có thể xử lý tất cả các yêu cầu của bạn</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="caulenhjs" class="tab-pane">
+                        <div>
+                            <table class="table text-center table-striped table-hover" >
+                                <tr>
+                                    <th scope="col">Stt</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Link</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                console.log(5 * "5");
+    
+                                                console.log("5" + 5 + 2);
+    
+                                                console.log(true + true);
+    
+                                                console.log(true - 1);
+    
+                                                console.log(Number("5") + 5 + 2);
+    
+                                                console.log(Number("2.3") + 1);
+    
+                                                console.log(Number("2,3") + 1);
+    
+                                                console.log(Number("3") * 5);
+    
+                                                console.log(Number("two") * 2);
+    
+                                                console.log(3 + 8 +"2");
+    
+                                                console.log(3 + "8" + 2);
+    
+    
+                                                let obj = {
+                                                    getData: () => 8
+                                                }
+    
+                                                const obj1 = {
+                                                    toString: () => 8
+                                                }
+    
+                                                console.log(3 * obj.getData());
+                                                console.log(3 * obj1);
+    
+    
+                                                let obj2 = {
+                                                    getData: () => "Hello"
+                                                }
+                                                console.log(3 * obj2);
+                                                console.log(3 + obj2);
+    
+                                                let obj3 = {
+                                                    toString: () => "Hello"
+                                                }
+                                                console.log(3 * obj3);
+                                                console.log(3 + obj3);
+    
+                                                console.log([1,2,3].toString());
+                                                console.log([1,2,3].join());
+    
+                                                console.log("Hello" + [1,2,3]);
+                                                console.log(4 + [1,2,3]);
+                                                console.log(4 * [1,2,3]);
+    
+    
+                                                console.log(12 / [2]);
+    
+    
+                                                console.log(20/"2");
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>
+                                        Các trường hợp đặc biệt trong javascript
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                const cong1 = function (x1, x2, x3, x4) {
+                                                    var z1 = x1 + x2 + x3 + x4;
+                                                    console.log('phép cộng: ' + z1);
+                                                }
+                                                cong1(1, 2, 3, 4);
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>function anonymouse</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                const chia = (x1, x2, x3, x4) => x1 / x2 / x3 / x4;
+                                                console.log('phép chia: '+chia(1,2,3,4));
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>function arrow</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                // day la in
+                                                let z = [1, 2, 3]
+                                                for (let i in z) {
+                                                    console.log(i);
+                                                }
+    
+                                                // day la of
+                                                let z = [1, 2, 3]
+                                                for (let i of z) {
+                                                    console.log(i);
+                                                }
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>in và of trong js</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                // while
+                                                let y = 0;
+                                                let x = 0;
+                                                while (y < 6) {
+                                                    console.log(x++);
+                                                    console.log(x);
+                                               
+                                                    console.log(++y);
+                                                    console.log(y);
+                                                }
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>while là kiểm tra điều kiện rồi mới bắt đầu thực hiện code bên trong</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                // lấy list class của thẻ button
+                                                let str = document.querySelector('button');
+                                                console.log('List class: ' + str.classList);
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>Nó sẽ chọn vào thẻ button và lấy hết những class có trong thẻ đó 'classList'</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                // tìm thằng cha của node
+                                                const searchNode = (elem, ParentClass) => {
+                                                    let currentNode = elem;
+                                                    while(!currentNode.classList.constains(ParentClass)){
+                                                        currentNode = currentNode.ParentNode;
+                                                    }
+                                                    return currentNode;
+                                                }
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>Nó nhảy ra thằng cha bên ngoài để tìm class đến khi nào trùng thì thôi 'ParentNode'</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="notejs" class="tab-pane">
+                        <div>
+                            <table class="table text-center table-striped table-hover" >
+                                <tr>
+                                    <th scope="col">Stt</th>
+                                    <th scope="col">Note</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <pre>
+                                            *** Có 6 loại function trong js:
+                                        - named function 
+                                        - named function with parameter
+                                        - anonymous function (bắt buộc phải khai báo bằng const vì n là duy nhất) => các dân pro hay dùng hàm kiểu này :)
+                                        - anonymous function with parameter
+                                        - arrow function
+                                        - arrow function with parameter
+                                        </pre>
+                                    </td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <pre>
+                                            - function cũng là 1 object
+                                        </pre>
+                                    </td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <pre>
+                                            - điều quan trọng luôn gán function vào biến const
+                                        </pre>
+                                    </td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <pre>
+                                            - so sánh == là ko qt kiểu dữ liệu / so sánh === là qt đến dữ liệu
+                                        </pre>
+                                    </td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>
+                                        <pre>
+                                            - tất cả mọi thứ trong js đều là true trừ false và underfine null
+                                        </pre>
+                                    </td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><strong>Ghi chú:</strong> => luôn luôn có tư duy đúng : đừng làm những thứ gì ngoại lệ </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
