@@ -10,6 +10,7 @@ table {
   overflow-x:auto;
 }
 
-.bootstrap, .other, .sql, .javascript{
+.bootstrap, .other, .sql, 
+.javascript, .webserver{
   display: none;
 }

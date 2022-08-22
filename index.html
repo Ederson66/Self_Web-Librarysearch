@@ -19,6 +19,12 @@
     img{
         width: 200px;
     }
+
+    code{
+        font-size: 87.5%;
+    color: #c22c72;
+    word-wrap: break-word;
+    }
 </style>
 <body>
     <div class="wrapper">
@@ -43,7 +49,7 @@
                     <button class="btn w-100 btn-success" id="btn-javascript">Javascript</button>
                 </div>
                 <div class="m-3">
-                    <button class="btn w-100 btn-success" id="btn-webserver">Webserver</button>
+                    <button class="btn w-100 btn-success" id="btn-webserver">Webserver và cmd</button>
                 </div>
             </div>
             <!-- Thư viện bootstrap -->
@@ -144,6 +150,17 @@
                         <td>Sử dụng link CDN hoặc tải về</td>
                     </tr>
                     <tr>
+                        <th scope="row">3</th>
+                        <td>...</td>
+                        <td>
+                            <a href="https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje" target="_blank">Xem</a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Css loading</td>
+                        <td>Vào xem css</td>
+                    </tr>
+                    <tr>
                         <td colspan="7"><strong>Ghi chú:</strong> Rất dễ dùng chỉ việc link CDN vào và tìm thêm trên gg là có thể sử dụng được</td>
                     </tr>
                 </table>
@@ -164,7 +181,7 @@
                       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#homesql" role="tab" aria-controls="homesql" aria-selected="true">Home SQL</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#caulenh" role="tab" aria-controls="caulenh" aria-selected="false">Câu lệnh</a>
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#caulenhsql" role="tab" aria-controls="caulenhsql" aria-selected="false">Câu lệnh</a>
                     </li>
                 </ul>
     
@@ -198,7 +215,7 @@
                             </table>
                         </div>
                     </div>
-                    <div id="caulenh" class="tab-pane">
+                    <div id="caulenhsql" class="tab-pane">
                         <div>
                             <table class="table text-center table-striped table-hover" >
                                 <tr>
@@ -637,7 +654,80 @@
 
             <!-- Webserver -->
             <div class="webserver scroll-table">
+                <table class="table text-center table-striped table-hover mt-5">
+                    <tr>
+                        <th style="text-align: center;" colspan="7">
+                            <h2>Webserver (cmd)</h2>
+                        </th>
+                    </tr>
+                </table>
 
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#homewebserver" role="tab" aria-controls="homewebserver" aria-selected="true">Home Webserver</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#caulenhwbserver" role="tab" aria-controls="caulenhwbserver" aria-selected="false">Câu lệnh</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="homewebserver" class="tab-pane active">
+                        <div>
+                            <table class="table text-center table-striped table-hover mt-5">
+                                <tr>
+                                    <th scope="col">Stt</th>
+                                    <th scope="col">Key search</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                    <th scope="col">Cách dùng</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Webserver</td>
+                                    <td>
+                                        <a href="#" target="_blank">Xem</a>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Web server là máy chủ cài đặt các chương trình phục vụ các ứng dụng web</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"><strong>Ghi chú:</strong> Dùng để chưa source code web thường gọi là hosting (từ hosting mới trỏ về domain, hosting có nhiều loại)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="caulenhwbserver" class="tab-pane">
+                        <div>
+                            <table class="table text-center table-striped table-hover" >
+                                <tr>
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Lệnh</th>
+                                    <th scope="col">Ý nghĩa</th>
+                                    <th scope="col">Liên quan</th>
+                                </tr>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>Install-WindowsFeature -name Web-Server -IncludeManagementTools</td>
+                                    <td>lệnh auto cài dặt iis webserver</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>
+                                        <span><</span>powershell<span>></span>net user Administrator "662002Du@@"<span><</span>/powershell<span>>
+                                    </td>
+                                    <td>lệnh đổi pass máy tính (có thể dùng để đổi vps ngay lúc tạo ở amazon,...)</td>
+                                    <td>...</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

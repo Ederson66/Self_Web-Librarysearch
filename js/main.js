@@ -47,4 +47,12 @@ $(window).load(function () {
         }
     });
 
+    Btnwebserver.addEventListener('click', () => {
+        if (WebserverTbl.style.display === "block") {
+            WebserverTbl.style.display = "none";
+        } else {
+            WebserverTbl.style.display = "block";
+        }
+    });
+
 });
