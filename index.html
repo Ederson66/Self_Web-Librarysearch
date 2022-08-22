@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS ME -->
+    <link rel="stylesheet" href="./css/main.css">
     <title>Thư viện tìm kiếm</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <style>
     body{
@@ -25,24 +27,27 @@
         </div>
         <div class="m-5">
             <div class="btn-thuvien">
-                <div class="m-2">
-                    <strong>Chọn thư viện:</strong>
+                <div class="m-3">
+                    <h4><strong>Chọn thư viện:</strong></h4>
                 </div>
-                <div class="m-2">
-                    <button class="btn btn-success" id="bootstrap">Bootstrap</button>
+                <div class="m-3">
+                    <button class="btn w-100 btn-success" id="btn-bootstrap">Bootstrap</button>
                 </div>
-                <div class="m-2">
-                    <button class="btn btn-success" id="other">Thư viện khác</button>
+                <div class="m-3">
+                    <button class="btn w-100 btn-success" id="btn-other">Thư viện khác</button>
                 </div>
-                <div class="m-2">
-                    <button class="btn btn-success" id="sql">SQL server</button>
+                <div class="m-3">
+                    <button class="btn w-100 btn-success" id="btn-sql">SQL server</button>
                 </div>
-                <div class="m-2">
-                    <button class="btn btn-success" id="javascript">Javascript</button>
+                <div class="m-3">
+                    <button class="btn w-100 btn-success" id="btn-javascript">Javascript</button>
+                </div>
+                <div class="m-3">
+                    <button class="btn w-100 btn-success" id="btn-webserver">Webserver</button>
                 </div>
             </div>
             <!-- Thư viện bootstrap -->
-            <div id="bootstrap" class="bootstrap d-none">
+            <div class="bootstrap scroll-table">
                 <table class="table text-center table-striped table-hover">
                     <tr>
                         <th style="text-align: center;" colspan="7">
@@ -100,7 +105,7 @@
             </div>
 
             <!-- Các thư viện khác -->
-            <div class="other d-none">
+            <div class="other scroll-table">
                 <table class="table text-center table-striped table-hover mt-5">
                     <tr>
                         <th style="text-align: center;" colspan="7">
@@ -145,7 +150,7 @@
             </div>
 
             <!-- SQL server -->
-            <div class="sql d-none">
+            <div class="sql scroll-table">
                 <table class="table text-center table-striped table-hover mt-5">
                     <tr>
                         <th style="text-align: center;" colspan="7">
@@ -314,7 +319,7 @@
             </div>
 
             <!-- Javascipt -->
-            <div class="javascript d-none">
+            <div class="javascript scroll-table">
                 <table class="table text-center table-striped table-hover mt-5">
                     <tr>
                         <th style="text-align: center;" colspan="7">
@@ -628,6 +633,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Webserver -->
+            <div class="webserver scroll-table">
+
             </div>
         </div>
     </div>

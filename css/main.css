@@ -1,0 +1,15 @@
+/* responsive table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.scroll-table{
+  overflow-x:auto;
+}
+
+.bootstrap, .other, .sql, .javascript{
+  display: none;
+}
