@@ -11,27 +11,13 @@
     <title>Thư viện tìm kiếm</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
-<style>
-    body{
-        background-color: azure;
-    }
-
-    img{
-        width: 200px;
-    }
-
-    code{
-        font-size: 87.5%;
-    color: #c22c72;
-    word-wrap: break-word;
-    }
-</style>
 <body>
     <div class="wrapper">
         <divc class="title m-2">
-            <h1 style="text-align: center;">THƯ VIỆN TÌM KIẾM</h1>
+            <h1 style="text-align: center;">THƯ VIỆN TÌM KIẾM CÁ NHÂN</h1>
         </div>
         <div class="m-5">
+            <!-- button home -->
             <div class="btn-thuvien">
                 <div class="m-3">
                     <h4><strong>Chọn thư viện:</strong></h4>
@@ -188,7 +174,7 @@
                 <div class="tab-content">
                     <div id="homesql" class="tab-pane active">
                         <div>
-                            <table class="table text-center table-striped table-hover mt-5">
+                            <table class="table text-center table-striped table-hover">
                                 <tr>
                                     <th scope="col">Stt</th>
                                     <th scope="col">Key search</th>
@@ -225,97 +211,97 @@
                                     <th scope="col">Design Tool</th>
                                 </tr>
                                 <tr>
-                                    <td scope="row">1</td>
+                                    <th scope="row">1</th>
                                     <td>select * from sys.sysservers</td>
                                     <td>show phần mềm sql đag đc cài đặt trên con server nào</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">2</td>
+                                    <th scope="row">2</th>
                                     <td>select * from sys.databases</td>
                                     <td>show tất cả các database đag nằm trên server của cta</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">3</td>
+                                    <th scope="row">3</th>
                                     <td>select DB_NAME() AS 'Database Name'</td>
                                     <td>để xem cta đag nằm trên con database nào</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">4</td>
+                                    <th scope="row">4</th>
                                     <td>Use tên database</td>
                                     <td>Dùng để sử dụng 1 con database khác</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">5</td>
+                                    <th scope="row">5</th>
                                     <td>select * from sys.database_files</td>
                                     <td>xem lưu dữ liệu và file log đag được lưu trữ ở đâu</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">6</td>
+                                    <th scope="row">6</th>
                                     <td>select * from sys.tables</td>
                                     <td>thể hiện tất cả các bảng trong database đó</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">7</td>
+                                    <th scope="row">7</th>
                                     <td>select * from sys.objects where type='PK'</td>
                                     <td>khóa chính</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">8</td>
+                                    <th scope="row">8</th>
                                     <td>select * from sys.objects where type='f'</td>
                                     <td>khóa phụ</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">9</td>
+                                    <th scope="row">9</th>
                                     <td>select * from sys.objects where type='p'</td>
                                     <td>thủ tục lưu trữ dữ liệu</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">10</td>
+                                    <th scope="row">10</th>
                                     <td>create database name(tên mình đặt database) => trong đó có nhiều tham số để set cho nó</td>
                                     <td>câu lệnh tạo database</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">11</td>
+                                    <th scope="row">11</th>
                                     <td>CREATE DATABASE ten_co_so_du_lieu;</td>
                                     <td>dùng để tạo database</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">12</td>
+                                    <th scope="row">12</th>
                                     <td>DROP DATABASE ten_co_so_du_lieu;</td>
                                     <td>để xóa một cơ sở dữ liệu hiện có trong SQL</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">13</td>
+                                    <th scope="row">13</th>
                                     <td>CREATE TABLE Tên_bảng</td>
                                     <td>dùng để tạo bảng</td>
                                     <td><img src="./img/13.PNG" alt=""></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">14</td>
+                                    <th scope="row">14</th>
                                     <td>INSERT INTO SINHVIEN (MASV, TENSV, QUEQUAN)VALUES (1, N’NGUYỄN VĂN A’, 1)</td>
                                     <td>thêm các bản ghi vào bảng</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">15</td>
+                                    <th scope="row">15</th>
                                     <td>SELECT * FROM table_name;</td>
                                     <td>sử dụng để chọn dữ liệu từ cơ sở dữ liệu</td>
                                     <td> Cú pháp truy vấn dữ liệu tổng quát<img src="./img/15.PNG" alt=""></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">16</td>
+                                    <th scope="row">16</th>
                                     <td>SELECT column_name(s)
                                         FROM table1
                                         INNER JOIN table2
@@ -324,7 +310,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">17</td>
+                                    <th scope="row">17</th>
                                     <td>ROW_NUMBER() OVER (ORDER BY tên_để_đánh_số )</td>
                                     <td>hàm dùng để đánh số thứ tự</td>
                                     <td></td>
@@ -358,9 +344,9 @@
                 </ul>
     
                 <div class="tab-content">
-                    <div id="homesql" class="tab-pane active">
+                    <div id="homejs" class="tab-pane active">
                         <div>
-                            <table class="table text-center table-striped table-hover mt-5">
+                            <table class="table text-center table-striped table-hover">
                                 <tr>
                                     <th scope="col">Stt</th>
                                     <th scope="col">Key search</th>
@@ -674,7 +660,7 @@
                 <div class="tab-content">
                     <div id="homewebserver" class="tab-pane active">
                         <div>
-                            <table class="table text-center table-striped table-hover mt-5">
+                            <table class="table text-center table-striped table-hover">
                                 <tr>
                                     <th scope="col">Stt</th>
                                     <th scope="col">Key search</th>
@@ -711,15 +697,15 @@
                                     <th scope="col">Liên quan</th>
                                 </tr>
                                 <tr>
-                                    <td scope="row">1</td>
+                                    <th scope="row">1</th>
                                     <td>Install-WindowsFeature -name Web-Server -IncludeManagementTools</td>
                                     <td>lệnh auto cài dặt iis webserver</td>
                                     <td>...</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">2</td>
+                                    <th scope="row">2</th>
                                     <td>
-                                        <span><</span>powershell<span>></span>net user Administrator "662002Du@@"<span><</span>/powershell<span>>
+                                        <span><</span>powershell<span>></span>net user Administrator "Mật khẩu của bạn"<span><</span>/powershell<span>>
                                     </td>
                                     <td>lệnh đổi pass máy tính (có thể dùng để đổi vps ngay lúc tạo ở amazon,...)</td>
                                     <td>...</td>

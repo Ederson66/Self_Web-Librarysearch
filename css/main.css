@@ -1,3 +1,18 @@
+/* css main */
+body{
+  background-color: azure;
+}
+
+img{
+  width: 200px;
+}
+
+code{
+  font-size: 87.5%;
+  color: #c22c72;
+  word-wrap: break-word;
+}
+
 /* responsive table */
 table {
   border-collapse: collapse;
