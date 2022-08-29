@@ -5,12 +5,14 @@ $(window).load(function () {
     var BtnSql = document.querySelector('#btn-sql');
     var Btnjavascript = document.querySelector('#btn-javascript');
     var Btnwebserver = document.querySelector('#btn-webserver');
+    var Btnlinkweb = document.querySelector('#btn-linkweb');
     // lấy table
     var BootstrapTbl = document.querySelector('.bootstrap');
     var OtherTbl = document.querySelector('.other');
     var SqlTbl = document.querySelector('.sql');
     var JavascriptTbl = document.querySelector('.javascript');
     var WebserverTbl = document.querySelector('.webserver');
+    var Linkweb = document.querySelector('.linkweb');
 
 
 
@@ -55,4 +57,18 @@ $(window).load(function () {
         }
     });
 
+    Btnlinkweb.addEventListener('click', () => {
+        if (Linkweb.style.display === "block") {
+            Linkweb.style.display = "none";
+        } else {
+            Linkweb.style.display = "block";
+        }
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-back",
+        },
+    });
 });
