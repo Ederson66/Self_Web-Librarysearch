@@ -646,6 +646,51 @@
                                     <td></td>
                                     <td>...</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>
+                                        <pre>
+                                            <code>
+                                                function nguyenlieugoisanxuat() {
+                                                    console.log('nguyên liệu gọi sản xuất | xong');
+                                                }
+                                        
+                                                function goimuanguyenlieu(z) {
+                                                    if(z || typeof z == 'function'){
+                                                        z();
+                                                    }
+                                                    console.log('gọi mua nguyên liệu');
+                                                }
+                                        
+                                                function goioplatgach(y) {
+                                                    if(y || typeof y == 'function'){
+                                                        y();
+                                                    }
+                                                    console.log('gọi ốp lát gạch');
+                                                }
+                                        
+                                                function xaynha(x) {
+                                                    if(x || typeof x == 'function'){
+                                                        x();
+                                                    }
+                                                    console.log('Xây nhà');
+                                                }
+                                                
+                                        
+                                                xaynha(
+                                                    goioplatgach(
+                                                        goimuanguyenlieu(
+                                                            nguyenlieugoisanxuat()
+                                                        )
+                                                    )
+                                                );
+                                            </code>
+                                        </pre>
+                                    </td>
+                                    <td>đây gọi là calback hell</td>
+                                    <td></td>
+                                    <td>...</td>
+                                </tr>
                             </table>
                         </div>
                     </div>
