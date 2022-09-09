@@ -6,6 +6,7 @@ $(window).load(function () {
     var Btnjavascript = document.querySelector('#btn-javascript');
     var Btnwebserver = document.querySelector('#btn-webserver');
     var Btnlinkweb = document.querySelector('#btn-linkweb');
+    var Btnwebtoolonline = document.querySelector('#btn-webtoolonline');
     // lấy table
     var BootstrapTbl = document.querySelector('.bootstrap');
     var OtherTbl = document.querySelector('.other');
@@ -13,6 +14,7 @@ $(window).load(function () {
     var JavascriptTbl = document.querySelector('.javascript');
     var WebserverTbl = document.querySelector('.webserver');
     var Linkweb = document.querySelector('.linkweb');
+    var Webtoolonline = document.querySelector('.webtoolonline');
 
 
 
@@ -62,6 +64,14 @@ $(window).load(function () {
             Linkweb.style.display = "none";
         } else {
             Linkweb.style.display = "block";
+        }
+    });
+
+    Btnwebtoolonline.addEventListener('click', () => {
+        if (Webtoolonline.style.display === "block") {
+            Webtoolonline.style.display = "none";
+        } else {
+            Webtoolonline.style.display = "block";
         }
     });
 

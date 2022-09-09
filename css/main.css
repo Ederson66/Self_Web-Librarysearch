@@ -26,7 +26,8 @@ table {
 }
 
 .bootstrap, .other, .sql, 
-.javascript, .webserver, .linkweb{
+.javascript, .webserver, .linkweb, 
+.webtoolonline{
   display: none;
 }
 
