@@ -16,69 +16,57 @@ $(window).load(function () {
     var Linkweb = document.querySelector('.linkweb');
     var Webtoolonline = document.querySelector('.webtoolonline');
 
-
+    // Hàm ẩn tất cả các bảng
+    function hideAllTables() {
+        BootstrapTbl.style.display = "none";
+        OtherTbl.style.display = "none";
+        SqlTbl.style.display = "none";
+        JavascriptTbl.style.display = "none";
+        WebserverTbl.style.display = "none";
+        Linkweb.style.display = "none";
+        Webtoolonline.style.display = "none";
+    }
 
     // add sự kiện click
     BtnBootstrap.addEventListener('click', () => {
-        if (BootstrapTbl.style.display === "block") {
-            BootstrapTbl.style.display = "none";
-        } else {
-            BootstrapTbl.style.display = "block";
-        }
+        hideAllTables(); // Ẩn tất cả các bảng
+        BootstrapTbl.style.display = "block"; // Mở bảng Bootstrap
     });
 
     BtnOther.addEventListener('click', () => {
-        if (OtherTbl.style.display === "block") {
-            OtherTbl.style.display = "none";
-        } else {
-            OtherTbl.style.display = "block";
-        }
+        hideAllTables();
+        OtherTbl.style.display = "block";
     });
 
     BtnSql.addEventListener('click', () => {
-        if (SqlTbl.style.display === "block") {
-            SqlTbl.style.display = "none";
-        } else {
-            SqlTbl.style.display = "block";
-        }
+        hideAllTables();
+        SqlTbl.style.display = "block";
     });
 
     Btnjavascript.addEventListener('click', () => {
-        if (JavascriptTbl.style.display === "block") {
-            JavascriptTbl.style.display = "none";
-        } else {
-            JavascriptTbl.style.display = "block";
-        }
+        hideAllTables();
+        JavascriptTbl.style.display = "block";
     });
 
     Btnwebserver.addEventListener('click', () => {
-        if (WebserverTbl.style.display === "block") {
-            WebserverTbl.style.display = "none";
-        } else {
-            WebserverTbl.style.display = "block";
-        }
+        hideAllTables();
+        WebserverTbl.style.display = "block";
     });
 
     Btnlinkweb.addEventListener('click', () => {
-        if (Linkweb.style.display === "block") {
-            Linkweb.style.display = "none";
-        } else {
-            Linkweb.style.display = "block";
-        }
+        hideAllTables();
+        Linkweb.style.display = "block";
     });
 
     Btnwebtoolonline.addEventListener('click', () => {
-        if (Webtoolonline.style.display === "block") {
-            Webtoolonline.style.display = "none";
-        } else {
-            Webtoolonline.style.display = "block";
-        }
+        hideAllTables();
+        Webtoolonline.style.display = "block";
     });
 
     var swiper = new Swiper(".mySwiper", {
         navigation: {
-          nextEl: ".btn-next",
-          prevEl: ".btn-back",
+            nextEl: ".btn-next",
+            prevEl: ".btn-back",
         },
     });
 });
